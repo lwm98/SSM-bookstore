@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+body{
+	font-family: 微软雅黑;
+}
+.bg{
+	weight:946.800px;
+	height:670px;
+}
+.main{
+	weight:auto;
+	height:500px;
+}
+.loginForm{
+	text-align: center;
+	height:300px;
+}
+.title-line {
+    width: 500px;
+    height: 28px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+*{margin:0;padding:0;font-size:13px;font-family:microsoft yahei}
+html,body{width:100%;height:100%;background:#fff}
+
+#container{width:100%;height:100%;position:fixed;top:0;left:0;z-index:999}
+#output{width:100%;height:100%}
+.prompt{width:60%;height:30px;margin:5px auto;text-align:center;line-height:30px;font-family:microsoft yahei,Arial,sans-serif;font-size:13px;color:#df0000}
+.containerT{width:400px;height:300px;text-align:center;position:absolute;top:50%;left:50%;margin:-150px 0 0 -200px;border-radius:3px;margin-top: 20px;}
+.containerT h1{font-size:18px;font-family:microsoft yahei,Arial,sans-serif;-webkit-transition-duration:1s;transition-duration:1s;-webkit-transition-timing-function:ease-in-put;transition-timing-function:ease-in-put;font-weight:500}
+form{padding:0px 0;position:relative;z-index:2}
+form input{-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:0;border:1px solid rgba(255,255,255,.4);background-color:rgba(255,255,255,.2);width:200px;border-radius:3px;padding:8px 15px;margin:0 auto 10px;display:block;text-align:center;font-size:15px;color:#fff;-webkit-transition-duration:.25s;transition-duration:.25s;font-weight:300}
+form input:hover{background-color:rgba(255,255,255,.4)}
+form input:focus{background-color:#fff;width:230px;color:#333}
+form button{-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:0;background-color:#fff;border:0;padding:10px 15px;color:#333;border-radius:3px;width:200px;cursor:pointer;font-family:microsoft yahei,Arial,sans-serif;font-size:16px;font-weight:700;-webkit-transition-duration:.25s;transition-duration:.25s}
+form button:hover{background-color:#f5f7f9}
+
+.bang_list{
+	
+}
+.bang_list_mode {
+    border-top: 1px solid #ebebeb;
+    overflow: hidden;
+}
+.bang_list,.clearfix {
+    zoom: 1;
+}
+.bang_list_mode li {
+    width: 298px;
+    border-left: 1px solid #ebebeb;
+    margin-left: -1px;
+    float: left;
+    padding-top: 45px;
+    padding-right: 25px;
+    overflow: hidden;
+}
+.bang_list li.hover{
+	background-color:#f6f6f6;
+}
+
+.bang_list li {
+    width: 518px;
+    position: relative;
+    padding: 20px 0 15px 172px;
+    line-height: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    vertical-align: top;
+}
+.bang_list_mode .list_num {
+    height: 20px;
+    width: 45px;
+    line-height: 20px;
+    font-family: arial;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 12;
+    color: #404040;
+    *height: 22px;
+    line-height: 22px;
+}
+.red {
+    color: #eb0000!important;
+}
+.bang_list_mode li .pic {
+    top: 45px;
+}
+.bang_list li .pic {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    z-index: 10;
+}
+.bang_list_mode .name, .bang_list_mode .star, .bang_list_mode .publisher_info {
+    height: 20px;
+    overflow: hidden;
+}
+.bang_list li .level span {
+    background-position: left top;
+    vertical-align: top;
+}
+.bang_list li .level, .bang_list li .level span {
+    background: url(../images/index_star.png) left bottom repeat-x;
+    display: inline-block;
+    width: 65px;
+    height: 12px;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 12px;
+    font-size: 0;
+    *vertical-align: auto;
+}
+.bang_list li .tuijian {
+    margin-left: 10px;
+}
+.bang_list li .publisher_info a {
+    margin-right: 10px;
+}
+.bang_wrapper a {
+    color: #1a66b3;
+    text-decoration: none;
+}
+.bang_list li .publisher_info span {
+    font-family: Arial;
+    margin: 0 6px 0 3px;
+}
+.bang_list li .price .price_n {
+    color: #c30;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.bang_list li .price .price_r {
+    text-decoration: line-through;
+    color: #878787;
+    margin-right: 10px;
+}
+.bang_list li .price .price_s {
+    color: #c30;
+}
+.bang_list li .price .price_e {
+    color: #828282;
+    padding-bottom: 5px;
+    height: 21px;
+    overflow: hidden;
+}
+.bang_list_mode li .buy_button a, .bang_list_mode li .buy_button a:hover {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.bang_list li a.listbtn_buy, .bang_list li a.listbtn_buydz {
+    background-color: #fa5000;
+}
+.bang_list li a.listbtn_buy {
+    background-position: left -126px;
+}
+.bang_list li .buy_button a, .bang_list li .buy_button a:hover {
+    display: inline-block;
+    height: 22px;
+    width: 75px;
+    margin-left: 15px;
+    font: 12px/23px 'Microsoft YaHei';
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+.checkbox1{
+	width:30px;
+	height:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

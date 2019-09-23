@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.lwm.dao.BuyCarDao">
+	<select id="findAllBuy" parameterType="String" resultType="book">
+		select * from buycar bc 
+		join books b on b.book_id=bc.book_id
+		join users u on u.user_id=bc.user_id
+		where u.user_id=#{userid}
+	</select>
+	<insert id="addBuyCar" parameterType="String">
+		insert into buycar(user_id,book_id)
+		value(#{userid},#{bookid})
+	</insert>
+	<delete id="deleteBuyCar" parameterType="String">
+		delete from buycar where book_id=#{bookid}
+	</delete>
+	</mapper>
